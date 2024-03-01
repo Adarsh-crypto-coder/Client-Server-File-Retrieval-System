@@ -85,14 +85,14 @@ Example: java  csc435.app.FileRetrievalServer 2 2000 10
 Client 1
 ```
 java csc435.app.FileRetrievalClient
-> connect 127.0.0.1 12345
+> connect 127.0.0.1 2000
 Connection successful!
 ```
 
 Client 2
 ```
 java csc435.app.FileRetrievalClient
-> connect 127.0.0.1 12345
+> connect 127.0.0.1 2001
 Connection successful!
 ```
 
@@ -101,8 +101,8 @@ Connection successful!
 Server
 ```
 > list
-client1: 127.0.0.1 5746
-client2: 127.0.0.1 9677
+client1: 127.0.0.1 2000
+client2: 127.0.0.1 2001
 ```
 
 **Step 4:** index files from the clients:
